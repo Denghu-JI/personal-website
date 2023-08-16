@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import SparkleBtn from './cover';
+import Alink from './alink';
 
 const RANDOM = (min: number, max: number) => 
     Math.floor(Math.random() * (max - min + 1) + min);
@@ -30,7 +31,7 @@ const Button: React.FC = () => {
     }, []);
 
     return (
-        <>
+        <div>      <Alink />
             {particleStyles.map((style, index) => (
                 <div 
                     key={index} 
@@ -40,7 +41,7 @@ const Button: React.FC = () => {
                     <SparkleBtn />
                 </div>
             ))}
-        </>
+        </div>
     );
 }
 

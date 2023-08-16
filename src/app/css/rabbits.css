@@ -1,0 +1,88 @@
+/* * {
+	margin: 0;
+	padding: 0;
+} */
+/* 
+body,html {
+	background: #FFF8E7;
+	width: 100%;
+	height: 100%;
+} */
+
+.ball-simulator-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* z-index: 1; */
+    /* pointer-events: none; */
+}
+
+.overlay-content {
+    position: relative;
+    z-index: 2; 
+}
+
+.ball-simulator-container canvas {
+    display: block; 
+    width: 100%;
+    height: 100%;
+}
+#info {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-bottom: 30px;
+	background: rgba(0,0,0,0.4);
+	border: 1px solid rgba(0,0,0,0.4);
+    z-index: 2
+}
+
+#info #close {
+	position: absolute;
+	width: 17px;
+	height: 20px;
+	right: -17px;
+	top: -2px;
+	line-height: 20px;
+	text-align: center;
+	color: #fff;
+	font-family: Arial, sans-serif;
+	background: rgba(0,0,0,0.6);
+	text-decoration: none;
+	border-bottom-right-radius: 5px;
+}
+
+#info .title {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #aaa;
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	background: rgba(0,0,0,0.4);
+}
+
+#info .footer {
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	line-height: 30px;
+	text-align: center;
+	color: #ADE1F7;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	background: rgba(0,0,0,0.2);
+	text-decoration: none;
+}
+
+#info .item {
+	line-height: 40px;
+	color: #333;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	margin: 0 10px;
+}
